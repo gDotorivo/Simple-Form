@@ -17,8 +17,8 @@ body {
 
 form {
     background-color: #29283f;
-    height: 700px;
-    width: 500px;
+    height: 80vh;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,22 +42,7 @@ form {
     gap: 5px;
 }
 
-.bolinha {
-    display: none;
-}
-
-#botaoEntrar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(218, 218, 218);
-    height: 100%;
-    width: 50%;
-    border-radius: 8px;
-    background-color: #44425c;
-}
-
-#botaoCadastrar {
+#entradas label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,10 +51,15 @@ form {
     width: 50%;
     border-radius: 8px;
     text-align: center;
+    cursor: pointer;
 }
 
-#botaoCadastrar:hover {
+#entradas label:hover, #entradas input:checked + label{
     background-color: #44425c;
+}
+
+input[type="radio"]{
+    display: none;
 }
 
 #grupoEmail {
@@ -93,8 +83,8 @@ form {
 }
 
 .placeHolder {
+    color: white;
     outline: none;
-    width: 100%;
     border-radius: 10px;
     padding: 15px;
     background-color: #201e33;
@@ -121,6 +111,7 @@ form {
 
 #selecaoPerfil label{
     width: 100%;
+    cursor: pointer;
     display: flex;
     background-color: #2a293d;
     border-radius: 10px;
@@ -129,8 +120,8 @@ form {
     border: 3px solid #3a3853;
 }
 
-#selecaoPerfil label:hover {
-    background-color: #5d1a9b;
+#selecaoPerfil label:hover, #selecaoPerfil input:checked + label{
+    background-color: #3f15663a;
     border: 3px solid #7a4ea3;
 }
 
@@ -152,6 +143,10 @@ form {
     resize: none;
 }
 
+#files {
+    display: none;
+}
+
 #clipe {
     position: absolute;
     background-color: #c0baba;
@@ -159,6 +154,7 @@ form {
     border-radius: 10px;
     bottom: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 #iconeClipe {
@@ -175,10 +171,16 @@ form {
 #botaoEnviar {
     height: 10%;
     width: 100%;
+    cursor: pointer;
     border-radius: 10px;
     text-align: center;
     font-style: bold;
     color: #29283f;
     background-color: #7a4ea3;
     font-size: 17px;
+}
+
+#botaoEnviar:hover {
+    background-color: #9259c7;
+    border: 3px solid #7a4ea3;
 }

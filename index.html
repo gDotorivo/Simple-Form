@@ -9,13 +9,14 @@
 <body>
     <form>
         <div id="entradas" class="tabs">
+            <input type="radio" name="entrada" id="cadastrar" checked>
             <label for="cadastrar" id="botaoCadastrar">Cadastrar</label>
-            <input type="radio" name="entrada" id="cadastrar" class="bolinha">
 
+            <input type="radio" name="entrada" id="entrar">
             <label for="entrar" id="botaoEntrar">Entrar</label>
-            <input type="radio" name="entrada" id="entrar" class="bolinha">
         </div>
-        <div id="grupoEmail">
+        
+       <div id="grupoEmail">
             <label for="email">Email:</label>
             <input type="email" name="email" required class="placeHolder" id="email" placeholder="seu@email.com">
         </div>
@@ -26,12 +27,14 @@
         <div id="grupoPerfil">
             <label for="">Perfil:</label>
             <div id="selecaoPerfil">
-                 <label for="jogador">Jogador</label>
-                <input type="radio" name="perfil" id="jogador" class="bolinha" required> 
+                <input type="radio" name="perfil" id="jogador" required> 
+                <label for="jogador">Jogador</label>
+
+                <input type="radio" name="perfil" id="devindie">
                 <label for="devindie">Dev Indie</label>
-                <input type="radio" name="perfil" id="devindie" class="bolinha"> 
-                <label for="empresa">Empresa</label>
-                <input type="radio" name="perfil" id="empresa" class="bolinha">
+                 
+                <input type="radio" name="perfil" id="empresa">
+                <label for="empresa">Empresa</label>  
             </div>
         </div>
         <div id="grupoTexto">
@@ -39,7 +42,7 @@
             <label for="files" id="clipe">
                 <i id="iconeClipe"></i>
             </label>
-            <input type="file" name="files" id="files" class="bolinha">
+            <input type="file" name="files" id="files">
         </div>
         <button type="submit" id="botaoEnviar">Entrar na plataforma</button>
     </form>
